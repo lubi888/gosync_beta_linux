@@ -1,0 +1,13 @@
+/home/tortek/Documents/github/gosync_beta_linux/build/linux/x64/debug/bundle/gosync_beta_linux
+/home/tortek/Documents/github/gosync_beta_linux/build/linux/x64/debug/bundle/data/icudtl.dat
+/home/tortek/Documents/github/gosync_beta_linux/build/linux/x64/debug/bundle/lib/libflutter_linux_gtk.so
+/home/tortek/Documents/github/gosync_beta_linux/build/linux/x64/debug/bundle/data/flutter_assets/kernel_blob.bin
+/home/tortek/Documents/github/gosync_beta_linux/build/linux/x64/debug/bundle/data/flutter_assets/packages/cupertino_icons/assets/CupertinoIcons.ttf
+/home/tortek/Documents/github/gosync_beta_linux/build/linux/x64/debug/bundle/data/flutter_assets/fonts/MaterialIcons-Regular.otf
+/home/tortek/Documents/github/gosync_beta_linux/build/linux/x64/debug/bundle/data/flutter_assets/shaders/stretch_effect.frag
+/home/tortek/Documents/github/gosync_beta_linux/build/linux/x64/debug/bundle/data/flutter_assets/shaders/ink_sparkle.frag
+/home/tortek/Documents/github/gosync_beta_linux/build/linux/x64/debug/bundle/data/flutter_assets/NativeAssetsManifest.json
+/home/tortek/Documents/github/gosync_beta_linux/build/linux/x64/debug/bundle/data/flutter_assets/AssetManifest.bin
+/home/tortek/Documents/github/gosync_beta_linux/build/linux/x64/debug/bundle/data/flutter_assets/FontManifest.json
+/home/tortek/Documents/github/gosync_beta_linux/build/linux/x64/debug/bundle/data/flutter_assets/version.json
+/home/tortek/Documents/github/gosync_beta_linux/build/linux/x64/debug/bundle/data/flutter_assets/NOTICES.Z
