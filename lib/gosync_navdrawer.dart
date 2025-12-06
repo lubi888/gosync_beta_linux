@@ -1,6 +1,7 @@
 import 'dart:io';
 
 import 'package:flutter/material.dart';
+import 'package:flutter/services.dart';
 import 'package:url_launcher/url_launcher.dart';
 // import 'package:flutter_gen/gen_l10n/app_localizations.dart';
 import './l10n/app_localizations.dart';
@@ -75,17 +76,14 @@ class _GoSyncNavDrawerState extends State<GoSyncNavDrawer> {
             },
           ),
           ListTile(
-            leading: const Icon(Icons.exit_to_app, color: Colors.red),
+            leading: const Icon(Icons.exit_to_app, color: Colors.amberAccent),
             title: const Text(
               'exit app button',
               style: TextStyle(color: Colors.blue),
             ),
-            trailing: const Icon(Icons.home_max, color: Colors.yellow),
+            trailing: const Icon(Icons.stop, color: Colors.redAccent),
             onTap: () {
-              // Navigator.pushNamed(context, '/');
-              // SystemChannels.platform.invokeMethod('SystemNavigator.pop');
-              // SystemChannels.platform.invokeMethod('SystemNavigator.
-              exit(0);
+              SystemChannels.platform.invokeMethod('SystemNavigator.pop');
             },
           ),
           // drawer header 1

@@ -9,7 +9,7 @@ class AppLocalizationsEn extends AppLocalizations {
   AppLocalizationsEn([String locale = 'en']) : super(locale);
 
   @override
-  String get titledate => 'goSync251204';
+  String get titledate => 'goSync251206';
 
   @override
   String get title => 'goSync';
