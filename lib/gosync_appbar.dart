@@ -4,6 +4,7 @@ import './l10n/app_localizations.dart';
 import 'package:flutter_linkify/flutter_linkify.dart';
 import 'package:url_launcher/url_launcher.dart';
 import './main.dart';
+import 'ad_banner.dart';
 // import './gosync_text.dart';
 // import './gosync_text.dart';
 
@@ -77,9 +78,11 @@ class _GoSyncAppBarState extends State<GoSyncAppBar> {
     () => Scaffold.of(context).openDrawer();
     debugPrint("ethsync appbar loaded");
     print(TimeOfDay.now());
+    // const AdBanner();
     // var vsync = 0;
     // TabController tabController = TabController(length: 3, vsync: this);
     return AppBar(
+      // const AdBanner(),
       // title: const Text(goSyncTitle),
       centerTitle: true,
       // backgroundColor: Colors.amber,

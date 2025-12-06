@@ -5,6 +5,7 @@ import 'package:flutter_linkify/flutter_linkify.dart';
 // import 'package:flutter_gen/gen_l10n/app_localizations.dart';
 import './gosync_text.dart';
 import './gosync_navdrawer.dart';
+import 'ad_banner.dart';
 // import 'package:intl/intl.dart';
 // import 'package:async/async.dart';
 
@@ -93,6 +94,7 @@ class GoSyncScrollbar1 extends StatelessWidget {
         child: ListView(
           controller: scrollbarController,
           children: <Widget>[
+            const AdBanner(),
             // controller: scrollbarController,
             //1st header bar 'install golang'
             Container(

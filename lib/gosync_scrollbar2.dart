@@ -3,6 +3,7 @@ import 'package:url_launcher/url_launcher.dart';
 import 'package:flutter_linkify/flutter_linkify.dart';
 import './gosync_text.dart';
 import './gosync_navdrawer.dart';
+import 'ad_banner.dart';
 // import 'package:async/async.dart';
 // import 'package:permission_handler/permission_handler.dart';
 // import './ethsync_urllinks.dart';
@@ -95,6 +96,7 @@ class GoSyncScrollbar2 extends StatelessWidget {
         child: ListView(
           controller: scrollbarController,
           children: <Widget>[
+            const AdBanner(),
             Container(
               padding: const EdgeInsets.all(15.0),
               width: 300.0,

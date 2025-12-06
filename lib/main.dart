@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_localizations/flutter_localizations.dart';
+import 'package:google_mobile_ads/google_mobile_ads.dart';
 // import 'package:flutter_gen/gen_l10n/app_localizations.dart';
 // import 'gosync_gamma/l10n/app_localizations.dart';
 import './l10n/app_localizations.dart';
@@ -7,6 +8,8 @@ import './l10n/app_localizations.dart';
 // import 'package:gosync_gamma/l10n/';
 // import 'package:intl/intl.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'ad_banner.dart';
+import 'dart:io';
 // for root bundle
 // import 'package:json_theme/json_theme.dart';
 // import 'dart:convert'; // json decode
@@ -27,6 +30,10 @@ import './gosync_install_secondary.dart';
 import './gosync_install_tertiary.dart';
 
 void main() {
+  WidgetsFlutterBinding.ensureInitialized();
+  if (Platform.isAndroid || Platform.isIOS) {
+    MobileAds.instance.initialize();
+  }
   runApp(const GoSyncHome(title: goSyncTitle));
 }
 

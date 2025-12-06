@@ -8,6 +8,7 @@ import './main.dart';
 // import './gosync_home.dart';
 import './gosync_navdrawer.dart';
 import './gosync_text.dart';
+import 'ad_banner.dart';
 
 // import 'package:json_theme/json_theme.dart';
 // import 'package:gosync/gosync_text.dart';
@@ -65,8 +66,9 @@ class _GoSyncScrollbar0State extends State<GoSyncScrollbar0> {
         child: ListView(
           controller: scrollbarController,
           children: <Widget>[
+            const AdBanner(),
             const Text(
-              'Home \nInstall Golang Page 0 \n2025.12.04',
+              'Home \nInstall Golang Page 0 \n2025.12.06',
               textAlign: TextAlign.center,
               style: TextStyle(fontSize: 50.0),
             ),

@@ -5,6 +5,7 @@ import './l10n/app_localizations.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:share_plus/share_plus.dart';
 import './main.dart';
+import 'ad_banner.dart';
 // import './gosync_home.dart';
 // import './gosync_appbar.dart';
 // import './gosync_scrollbar0.dart';
@@ -56,8 +57,10 @@ class _GoSyncNavDrawerState extends State<GoSyncNavDrawer> {
       // child: SafeArea(
       semanticLabel: 'drawer',
       child: ListView(
+        // prototypeItem: const AdBanner(),
         // child: Column(
         children: [
+          const AdBanner(),
           ListTile(
             leading: const Icon(Icons.home, color: Colors.green),
             title: const Text(

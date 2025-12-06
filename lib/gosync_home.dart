@@ -5,6 +5,7 @@ import './gosync_appbar.dart';
 import './gosync_scrollbar0.dart';
 import './gosync_scrollbar1.dart';
 import './gosync_scrollbar2.dart';
+// import 'ad_banner.dart';
 
 class GoSyncHomePage extends StatefulWidget {
   const GoSyncHomePage({super.key, required this.title});
@@ -25,6 +26,7 @@ class _GoSyncHomePageState extends State<GoSyncHomePage> {
       drawer: GoSyncNavDrawer(),
       body: TabBarView(
         children: <Widget>[
+          // const AdBanner(),
           GoSyncScrollbar0(),
           GoSyncScrollbar1(),
           GoSyncScrollbar2(),
