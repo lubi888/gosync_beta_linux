@@ -1,3 +1,5 @@
+import 'dart:io';
+
 import 'package:flutter/material.dart';
 import 'package:url_launcher/url_launcher.dart';
 // import 'package:flutter_gen/gen_l10n/app_localizations.dart';
@@ -60,7 +62,7 @@ class _GoSyncNavDrawerState extends State<GoSyncNavDrawer> {
         // prototypeItem: const AdBanner(),
         // child: Column(
         children: [
-          const AdBanner(),
+          // const AdBanner(),
           ListTile(
             leading: const Icon(Icons.home, color: Colors.green),
             title: const Text(
@@ -70,6 +72,20 @@ class _GoSyncNavDrawerState extends State<GoSyncNavDrawer> {
             trailing: const Icon(Icons.home_max, color: Colors.yellow),
             onTap: () {
               Navigator.pushNamed(context, '/');
+            },
+          ),
+          ListTile(
+            leading: const Icon(Icons.exit_to_app, color: Colors.red),
+            title: const Text(
+              'exit app button',
+              style: TextStyle(color: Colors.blue),
+            ),
+            trailing: const Icon(Icons.home_max, color: Colors.yellow),
+            onTap: () {
+              // Navigator.pushNamed(context, '/');
+              // SystemChannels.platform.invokeMethod('SystemNavigator.pop');
+              // SystemChannels.platform.invokeMethod('SystemNavigator.
+              exit(0);
             },
           ),
           // drawer header 1
@@ -210,6 +226,7 @@ class _GoSyncNavDrawerState extends State<GoSyncNavDrawer> {
               ),
             ],
           ),
+          const AdBanner(),
           ExpansionTile(
             initiallyExpanded: true,
             title: const Text(
@@ -791,6 +808,7 @@ class _GoSyncNavDrawerState extends State<GoSyncNavDrawer> {
               ),
             ),
           ),
+          const AdBanner(),
           ExpansionTile(
             initiallyExpanded: true,
             title: const Text(
@@ -1907,7 +1925,6 @@ class _GoSyncNavDrawerState extends State<GoSyncNavDrawer> {
                   //   launch deep linking youtube.
                 },
               ),
-
               ListTile(
                 leading: const Icon(Icons.speaker_notes, color: Colors.grey),
                 title: const Text(
@@ -1935,6 +1952,7 @@ class _GoSyncNavDrawerState extends State<GoSyncNavDrawer> {
               ),
             ],
           ),
+          const AdBanner(),
           ExpansionTile(
             initiallyExpanded: true,
             title: const Text(
@@ -1945,6 +1963,7 @@ class _GoSyncNavDrawerState extends State<GoSyncNavDrawer> {
             leading: const Icon(Icons.android, color: Colors.amber), //add icon
             childrenPadding: const EdgeInsets.only(left: 30), //children padding
             children: [
+              const AdBanner(),
               ListTile(
                 leading: const Icon(Icons.chat, color: Colors.red),
                 title: const Text(

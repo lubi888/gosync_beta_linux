@@ -606,6 +606,7 @@ class GoSyncScrollbar2 extends StatelessWidget {
                 ),
               ),
             ),
+            const AdBanner(),
             TextButton(
               child: Image.asset(
                 _kAssets18,

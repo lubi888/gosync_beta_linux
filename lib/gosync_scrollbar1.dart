@@ -482,6 +482,7 @@ class GoSyncScrollbar1 extends StatelessWidget {
             ),
             const Padding(padding: EdgeInsets.all(8.0)),
             // 2nd greenterm with copy fab.
+            const AdBanner(),
             Container(
               padding: const EdgeInsets.all(8.0),
               decoration: BoxDecoration(
