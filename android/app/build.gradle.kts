@@ -24,10 +24,11 @@ android {
         applicationId = "com.example.gosync.gosync_beta_linux"
         // You can update the following values to match your application needs.
         // For more information, see: https://flutter.dev/to/review-gradle-config.
+
 //        minSdk = flutter.minSdkVersion
 //        targetSdk = flutter.targetSdkVersion
-        minSdkVersion = 35
-        targetSdkVersion = 35
+        minSdk = 35
+        targetSdk = 35
         versionCode = flutter.versionCode
         versionName = flutter.versionName
     }
