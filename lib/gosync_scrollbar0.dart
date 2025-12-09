@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-// import 'package:gosync_gamma/mainGenericFtateful.dart';
 import 'package:url_launcher/url_launcher.dart';
 // import 'package:flutter_gen/gen_l10n/app_localizations.dart';
 import 'package:google_fonts/google_fonts.dart';
@@ -8,7 +7,7 @@ import './main.dart';
 // import './gosync_home.dart';
 import './gosync_navdrawer.dart';
 import './gosync_text.dart';
-import 'ad_banner.dart';
+import './ad_banner.dart';
 
 // import 'package:json_theme/json_theme.dart';
 // import 'package:gosync/gosync_text.dart';
@@ -68,7 +67,7 @@ class _GoSyncScrollbar0State extends State<GoSyncScrollbar0> {
           children: <Widget>[
             const AdBanner(),
             const Text(
-              'Home \nInstall Golang Page 0 \n2025.12.08',
+              'Home \nInstall Golang Page 0 \n2025.12.10',
               textAlign: TextAlign.center,
               style: TextStyle(fontSize: 50.0),
             ),

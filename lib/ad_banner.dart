@@ -1,3 +1,4 @@
+// import 'package:universal_platform/universal_platform.dart';
 import 'dart:io';
 import 'package:flutter/material.dart';
 import 'package:google_mobile_ads/google_mobile_ads.dart';
@@ -14,6 +15,7 @@ class _AdBannerState extends State<AdBanner> {
   bool _isLoaded = false;
 
   // Test Ad Unit IDs
+  // final String _adUnitId = UniversalPlatform.isAndroid
   final String _adUnitId = Platform.isAndroid
       ? 'ca-app-pub-3940256099942544/6300978111'
       : 'ca-app-pub-3940256099942544/2934735716';
@@ -21,7 +23,10 @@ class _AdBannerState extends State<AdBanner> {
   @override
   void initState() {
     super.initState();
+    // if (Platform.isAndroid || Platform.isIOS) {
+    //   if (UniversalPlatform.isAndroid || UniversalPlatform.isIOS || UniversalPlatform.isWeb) {
     if (Platform.isAndroid || Platform.isIOS) {
+
       _loadAd();
     }
   }
@@ -55,7 +60,9 @@ class _AdBannerState extends State<AdBanner> {
 
   @override
   Widget build(BuildContext context) {
+    // if ((UniversalPlatform.isAndroid || UniversalPlatform.isIOS || UniversalPlatform.isWeb) &&
     if ((Platform.isAndroid || Platform.isIOS) &&
+
         _bannerAd != null &&
         _isLoaded) {
       return Align(

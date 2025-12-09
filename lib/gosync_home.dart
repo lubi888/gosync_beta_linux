@@ -1,11 +1,9 @@
 import 'package:flutter/material.dart';
-// import './main.dart';
 import './gosync_navdrawer.dart';
 import './gosync_appbar.dart';
 import './gosync_scrollbar0.dart';
 import './gosync_scrollbar1.dart';
 import './gosync_scrollbar2.dart';
-// import 'ad_banner.dart';
 
 class GoSyncHomePage extends StatefulWidget {
   const GoSyncHomePage({super.key, required this.title});
