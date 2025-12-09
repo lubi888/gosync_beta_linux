@@ -2343,6 +2343,118 @@ class _GoSyncNavDrawerState extends State<GoSyncNavDrawer> {
                 // leading:
                 // CircleAvatar(radius: 14, backgroundColor: Colors.yellowAccent),
                 leading: const Icon(
+                  FontAwesomeIcons.fly,
+                  color: Colors.lightGreenAccent,
+                ),
+                title: const Text(
+                  'visit fly.io',
+                  style: TextStyle(color: Colors.blue),
+                ),
+                subtitle: const Text(
+                  'everaging global Anycast load-balancing, zero-config private networking, hardware isolation, instant WireGuard VPN connections, and push-button deployments scaling to thousands of instances.',
+                  style: TextStyle(
+                    fontStyle: FontStyle.italic,
+                    color: Colors.orangeAccent,
+                  ),
+                ),
+                trailing: const Icon(
+                  FontAwesomeIcons.fly,
+                  color: Colors.deepOrangeAccent,
+                ),
+                onTap: () {
+                  // Navigator.of(context).pop();
+                  _launchFlyioGo();
+                  //   launch deep linking youtube.
+                },
+              ),
+              ListTile(
+                // leading:
+                // CircleAvatar(radius: 14, backgroundColor: Colors.yellowAccent),
+                leading: const Icon(
+                  FontAwesomeIcons.server,
+                  color: Colors.lightBlue,
+                ),
+                title: const Text(
+                  'visit Railway',
+                  style: TextStyle(color: Colors.lightBlue),
+                ),
+                subtitle: const Text(
+                  '',
+                  style: TextStyle(
+                    fontStyle: FontStyle.italic,
+                    color: Colors.purpleAccent,
+                  ),
+                ),
+                trailing: const Icon(
+                  FontAwesomeIcons.server,
+                  color: Colors.redAccent,
+                ),
+                onTap: () {
+                  // Navigator.of(context).pop();
+                  _launchRailwayGo();
+                  //   launch deep linking youtube.
+                },
+              ),
+              ListTile(
+                // leading:
+                // CircleAvatar(radius: 14, backgroundColor: Colors.yellowAccent),
+                leading: const Icon(
+                  FontAwesomeIcons.server,
+                  color: Colors.lightBlue,
+                ),
+                title: const Text(
+                  'visit Render',
+                  style: TextStyle(color: Colors.lightBlue),
+                ),
+                subtitle: const Text(
+                  'sBuild, deploy, and scale your apps with unparalleled ease – from your first user to your billionth',
+                  style: TextStyle(
+                    fontStyle: FontStyle.italic,
+                    color: Colors.purpleAccent,
+                  ),
+                ),
+                trailing: const Icon(
+                  FontAwesomeIcons.server,
+                  color: Colors.redAccent,
+                ),
+                onTap: () {
+                  // Navigator.of(context).pop();
+                  _launchRenderGo();
+                  //   launch deep linking youtube.
+                },
+              ),
+              ListTile(
+                // leading:
+                // CircleAvatar(radius: 14, backgroundColor: Colors.yellowAccent),
+                leading: const Icon(
+                  FontAwesomeIcons.server,
+                  color: Colors.lightBlue,
+                ),
+                title: const Text(
+                  'visit Hetzner',
+                  style: TextStyle(color: Colors.lightBlue),
+                ),
+                subtitle: const Text(
+                  'Why its popular: The absolute best price-to-performance ratio in the market. est for: Bootstrappers and developers comfortable with Linux.',
+                  style: TextStyle(
+                    fontStyle: FontStyle.italic,
+                    color: Colors.purpleAccent,
+                  ),
+                ),
+                trailing: const Icon(
+                  FontAwesomeIcons.server,
+                  color: Colors.redAccent,
+                ),
+                onTap: () {
+                  // Navigator.of(context).pop();
+                  _launchHetznerGo();
+                  //   launch deep linking youtube.
+                },
+              ),
+              ListTile(
+                // leading:
+                // CircleAvatar(radius: 14, backgroundColor: Colors.yellowAccent),
+                leading: const Icon(
                   FontAwesomeIcons.digitalOcean,
                   color: Colors.lightBlue,
                 ),
@@ -2576,7 +2688,7 @@ class _GoSyncNavDrawerState extends State<GoSyncNavDrawer> {
                   style: TextStyle(color: Colors.lightBlue),
                 ),
                 subtitle: const Text(
-                  'look at some platform server setups',
+                  'Why it\'s popular: While AWS is bigger overall, Google Cloud Platform (GCP) is often preferred by Go developers because the Go language was designed at Google, and GCP\'s tooling for Go is exceptional. The Killer Feature: Cloud Run allows you to deploy a Go container that scales to zero when no one is using it (costing you \$0) and scales up instantly to handle millions of requests. Best for sporadic traffic, side projects that might go viral, and enterprise-grade scaling without managing servers.',
                   style: TextStyle(
                     fontStyle: FontStyle.italic,
                     color: Colors.greenAccent,
@@ -2589,6 +2701,34 @@ class _GoSyncNavDrawerState extends State<GoSyncNavDrawer> {
                 onTap: () {
                   // Navigator.of(context).pop();
                   _launchGoogleCloudGo();
+                  //   launch deep linking youtube.
+                },
+              ),
+              ListTile(
+                // leading:
+                // CircleAvatar(radius: 14, backgroundColor: Colors.yellowAccent),
+                leading: const Icon(
+                  FontAwesomeIcons.windows,
+                  color: Colors.lightBlue,
+                ),
+                title: const Text(
+                  'visit MS Azure Cloud',
+                  style: TextStyle(color: Colors.lightBlue),
+                ),
+                subtitle: const Text(
+                  'azure ms servers',
+                  style: TextStyle(
+                    fontStyle: FontStyle.italic,
+                    color: Colors.greenAccent,
+                  ),
+                ),
+                trailing: const Icon(
+                  FontAwesomeIcons.microsoft,
+                  color: Colors.blueAccent,
+                ),
+                onTap: () {
+                  // Navigator.of(context).pop();
+                  _launchAzureGo();
                   //   launch deep linking youtube.
                 },
               ),
@@ -2954,17 +3094,6 @@ Future<void> _launchGoGDG() async {
   }
 }
 
-// // _launchPkgGoDevStandardLibrary
-// final Uri _urlPkgGoDev = Uri.parse('https://pkg.go.dev/go');
-
-// Future<void> _launchPkgGoDevGo() async {
-//   debugPrint("customer left app to pkg.go.dev/go");
-//   print(TimeOfDay.now());
-//   if (!await launchUrl(_urlPkgGoDevGo)) {
-//     throw Exception('Could not launch $_urlPkgGoDevGo');
-//   }
-// }
-
 // _launchPkgGoDevGo
 final Uri _urlPkgGoDev = Uri.parse('https://pkg.go.dev');
 
@@ -3287,9 +3416,58 @@ Future<void> _launchNetbeansGo() async {
   }
 }
 
+final Uri _urlFlyioGo = Uri.parse(
+  'https://fly.io/',
+);
+
+Future<void> _launchFlyioGo() async {
+  debugPrint("customer left app to flyiogo issues");
+  print(TimeOfDay.now());
+  if (!await launchUrl(_urlFlyioGo)) {
+    throw Exception('Could not launch $_urlFlyioGo');
+  }
+}
+
+final Uri _urlRailwayGo = Uri.parse(
+  'https://railway.com/',
+);
+
+Future<void> _launchRailwayGo() async {
+  debugPrint("customer left app to github go issues");
+  print(TimeOfDay.now());
+  if (!await launchUrl(_urlRailwayGo)) {
+    throw Exception('Could not launch $_urlRailwayGo');
+  }
+}
+// Render.com
+final Uri _urlRenderGo = Uri.parse(
+  'https://render.com/',
+);
+
+Future<void> _launchRenderGo() async {
+  debugPrint("customer left app to github go issues");
+  print(TimeOfDay.now());
+  if (!await launchUrl(_urlRenderGo)) {
+    throw Exception('Could not launch $_urlRenderGo');
+  }
+}
+
+// _launchHetznerGo();
+// _launchDigitalOceanGo
+final Uri _urlHetznerGo = Uri.parse(
+  'https://www.hetzner.com/',
+);
+
+Future<void> _launchHetznerGo() async {
+  debugPrint("customer left app to herzner issues");
+  print(TimeOfDay.now());
+  if (!await launchUrl(_urlHetznerGo)) {
+    throw Exception('Could not launch $_urlHetznerGo');
+  }
+}
 // _launchDigitalOceanGo
 final Uri _urlDigitalOceanGo = Uri.parse(
-  'https://www.digitalocean.com/community/tutorial-series/how-to-code-in-go',
+  'https://www.digitalocean.com/',
 );
 
 Future<void> _launchDigitalOceanGo() async {
@@ -3403,6 +3581,17 @@ Future<void> _launchGoogleCloudGo() async {
   print(TimeOfDay.now());
   if (!await launchUrl(_urlGoogleCloudGo)) {
     throw Exception('Could not launch $_urlGoogleCloudGo');
+  }
+}
+
+// _launchAzureGo
+final Uri _urlAzureGo = Uri.parse('https://cloud.google.com/go');
+
+Future<void> _launchAzureGo() async {
+  debugPrint("customer left app to Hostinger");
+  print(TimeOfDay.now());
+  if (!await launchUrl(_urlAzureGo)) {
+    throw Exception('Could not launch $_urlAzureGo');
   }
 }
 
