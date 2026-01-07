@@ -67,7 +67,7 @@ class _GoSyncScrollbar0State extends State<GoSyncScrollbar0> {
           children: <Widget>[
             const AdBanner(),
             const Text(
-              'Home \nInstall Golang Page 0 \n2025.12.10',
+              'Home \nInstall Golang Page 0 \n2026.01.07',
               textAlign: TextAlign.center,
               style: TextStyle(fontSize: 50.0),
             ),
